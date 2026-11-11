@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/banner.svg" alt="Providers: Sail, Wafer, Modal, Baseten, Fireworks, Together AI, Vultr, OpenAI, Anthropic" width="860"></p>
+<p align="center"><img src="assets/banner.svg" alt="Providers: Sail, Wafer, Modal, Baseten, Fireworks, Together AI, Vultr, OpenCode Zen, OpenAI, Anthropic" width="860"></p>
 
 # inference-bench
 
@@ -28,7 +28,7 @@ providers, not model intelligence.
 
 ![caching](results/charts/caching.svg)
 
-<sub>Last 30 days of runs: 2026-11-09 to 2026-11-10. Data: [summary](results/summary.csv), [raw results](results/).</sub>
+<sub>Last 30 days of runs: 2026-11-09 to 2026-11-11. Data: [summary](results/summary.csv), [raw results](results/).</sub>
 <!-- results:end -->
 
 ## Methodology
@@ -64,6 +64,8 @@ npm run report                    # update the charts above and results/summary.
 ## Notes and limitations
 
 - OpenAI and Anthropic models are included for reference.
+- OpenCode Zen is a gateway that routes to upstream providers. Its results on this branch come from a single run on
+  a laptop, not the GitHub-hosted runner the other providers ran on, and its logo here is a placeholder.
 - Sail has three tiers (`asap`, `balanced`, `flex`) at different prices. `flex` only works through the
   Responses API, while everything else here uses Chat Completions. It doesn't stream, so its time isn't
   split into waiting and generating. On it, Kimi K3.1 Pro often ends a turn without making the tool call it
